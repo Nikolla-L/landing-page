@@ -1,0 +1,406 @@
+html{
+    scroll-behavior: smooth;
+    background-color: #ededfc;
+}
+section{
+    width:100%;
+    max-width:1920px;
+    margin-left:50%;
+    transform: translate(-50%, 0);
+}
+header{
+    width:84.3%;
+    display:flex;
+    justify-content: space-between;
+    height:105px;
+    align-items:flex-end;
+    margin-left:50%;
+    transform: translate(-50%, 0);
+    position:fixed;
+    z-index:10;
+    transition:1s;
+}
+.change-header{
+    height:50px;
+}
+.navigation-links{
+    display:flex;
+    justify-content: space-between;
+    width:55.500em;
+    font:500 16px poppins;
+}
+.navigation-links li{
+    margin-top:12px;
+}
+.navigation-links li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(63, 106, 224);
+    transition: width .3s;
+}
+.navigation-links li:hover::after {
+    width: 100%;
+}
+.navigation-links li a{
+    color:white;
+}
+.contact-btn{
+    width:171px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:30px;
+    background-color:white;
+    cursor:pointer;
+}
+.contact-btn a{
+    color:black;
+    transition:1s;
+}
+.contact-btn:hover a,
+.explore-m:hover{
+    color:blue;
+}
+.logo{
+    cursor:context-menu;
+    color:#0D13D7;
+    font:500 32px Roboto;
+    margin-bottom:10px;
+}
+.logo span{
+    color:black;
+}
+.active{
+    border-bottom:3px blue solid;
+    border-radius:1px;
+}
+.section1{
+    z-index:4;
+    position: absolute;
+    width:100%;
+    height:700px;
+    border-radius:0% 0% 34% 66% / 71% 100% 24% 37% ;
+}
+.sec1-container{
+    display:flex;
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+    width:84.3%;
+    margin:0 auto;
+}
+.section1-child{
+    width:48%;
+    color:white;
+    align-items: center;
+}
+.section1-child h1{
+    font:500 40px Roboto;
+    cursor: context-menu;
+}
+.section1-child p{
+    font:16px/24px Roboto;
+    cursor: context-menu;
+    margin: 30px 0;
+}
+.download-btn{
+    cursor:pointer;
+    width:200px;
+    height:78px;
+    background-color:white;
+    border-radius:16px;
+    font:500 19px Roboto;
+    border:none;
+}
+.explore-m{
+    cursor:pointer;
+    background-color:rgba(255, 255, 255, 0);
+    border:none;
+    font:500 19px Roboto;
+    margin-left:10px;
+    color:white;
+    transition: 0.9s;
+}
+.section1-child img{
+    width:200px;
+    height:350px;
+    opacity: 0.8;
+}
+.images img:nth-child(2){
+    width:300px;
+    height:500px;
+    opacity: 1;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+}
+.background-div{
+    width:100%;
+    height:800px;
+    z-index:1;
+    position: absolute;
+    background-color:#3C41DF;
+    border-radius:0% 0% 30% 96% / 29% 42% 32% 46%  ;
+}
+.background-img-div{
+    width:100%;
+    z-index:2;
+    position: absolute;
+    background-image: url('../images/woman-in-black-tank-top-using-silver-macbook.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:700px;
+    opacity: 0.5;
+    border-radius:0% 0% 34% 66% / 71% 100% 24% 37% ;
+}
+.section2{
+    top:902px;
+    width:100%;
+    position: absolute;
+    z-index: 4;
+}
+.sec2-container,
+.sec3-container,
+.sec4-container,
+.sec5-container{
+    width:84.3%;
+    margin-left:50%;
+    transform: translate(-50%, 0);
+}
+.sec2-boxes-wrapper{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top:50px;
+}
+.sec2-title,
+.sec3-title,
+.sec5-title{
+    margin-left:50%;
+    transform: translate(-50%, 0);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2-title h1,
+.sec3-title h1,
+.sec5-title h1{
+    cursor: context-menu;
+    font:500 34px poppins;
+    text-align: center;
+    width:80%;
+}
+.sec2-title p,
+.sec3-title p,
+.sec5-title p{
+    color:#6B6969;
+    cursor: context-menu;
+    font:16px/24px Roboto;
+    text-align: center;
+    margin-top:20px;
+}
+.sec2-box{
+    cursor:context-menu;
+    background-color:white;
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height:max-content;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sec2-box img{
+    margin-top:20px;
+    width:250px;
+    height:235.51px;
+}
+.sec2-box h3{
+    font:bold 24px Roboto;
+    margin-top:20px;
+}
+.sec2-box p,
+.sec3-text-wrapper p{
+    color:#6B6969;
+    font:16px/24px Roboto;
+    margin:20px 0;
+    text-align: center;
+    width:80%;
+}
+.sec2-full{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.section3{
+    top:1870px;
+    width:100%;
+    position: absolute;
+    z-index: 3;
+}
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 16vw solid transparent;
+    border-left: 31.250vw solid #0D13D7;
+    border-bottom: 16vw solid transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:50%;
+    transform: translate(0, -90%);
+    position:absolute; 
+    z-index:1;
+  }
+  #circle-right{
+      position:absolute;
+      z-index:2;
+      border-radius:12vw;
+      width:24vw;
+      height:24vw;
+      background-color:#ffffff46;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #circle-inside{
+      width:16vw;
+      height:16vw;
+      border-radius:8vw;
+      background-color:rgba(255, 255, 255, 0.39);
+  }
+.sec3-content-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec3-container{
+    position: absolute;
+    z-index:4;
+}
+.sec3-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+.sec3-text-wrapper h3{
+    font:bold 24px Roboto;
+    width:30%;
+    cursor: context-menu;
+}
+.sec3-text-wrapper p{
+    text-align: start;
+    cursor: context-menu;
+}
+.sec3-btn{
+    width:245px;
+    height:73px;
+    border-radius:5px;
+    border:2px solid rgb(192, 192, 192);
+    font:20px poppins;
+    color:rgb(109, 109, 109);
+    background-color:white;
+    text-align: center;
+    cursor: pointer;
+}
+.sec3-btn span{
+    font-size:30px;
+}
+.section4{
+    top:2900px;
+    width:100%;
+    position: absolute;
+    z-index: 3;
+}
+.sec4-title{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.sec4-title h1{
+    font:500 35px  poppins;
+    width:60%;
+    cursor:context-menu;
+    text-align: center;
+}
+.sec4-title p{
+    cursor:context-menu;
+    font:16px/24px Roboto;
+    margin:20px 0;
+    width:80%;
+    text-align: center;
+}
+.sec4-boxes-wrapper{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-between;
+}
+.sec4-box{
+    display:flex;
+    border-radius:100% 0% 100% 100% / 100% 0% 100% 0% ;
+    background-color:white;
+    width:22%;
+    height:100px;
+    transition:0.5s;
+    cursor: context-menu;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.sec4-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.sec4-box img{
+    width:82.62px;
+    height:82.62px;
+}
+.sec4-text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.sec4-text h1{
+    color:blue;
+    font:bold 24px poppins;
+}
+.sec4-text h2{
+    font: bold 19px poppins;
+}
+.section5{
+    top:3400px;
+    width:100%;
+    position: absolute;
+    z-index: 3;
+}
+.sec5-imgs img{
+    width:25%;
+}
+.sec5-imgs{
+    width:100%;
+    display:flex;
+    position: absolute;
+    z-index:4;
+    overflow: hidden;
+}
+.slider__btn {
+    position: absolute;
+    margin-top: 18%;
+    z-index: 5;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.25rem;
+    cursor: pointer;
+    outline: none;
+  }
+  .slider__btn--left {
+    left: -5%;
+  }
+  .slider__btn--right {
+    right: -5%;
+  }

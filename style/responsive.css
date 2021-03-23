@@ -38,6 +38,9 @@
     .footer-form{
         top:4500px;
     }
+    .bottom-space{
+        top:5000px;
+    }
 }
 @media(max-width:1205px){
     header{
@@ -88,6 +91,9 @@
     }
     .footer-form{
         margin-bottom:200px;
+    }
+    .bottom-space{
+        top:5200px;
     }
 }
 @media(max-width:1115px){
@@ -418,9 +424,127 @@
         margin-top:80px;
     }
     .section3{
-        top:3150px;
+        top:3350px;
+    }
+    .sec3-title{
+        width:98%;
+    }
+    .section4{
+        top:4750px;
+    }
+    .sec4-bpx{
+        width:98%;
+        height:80px;
+    }
+    .sec4-box img{
+        width:50px;
+        height:50px;
+    }
+    .section5{
+        top:6100px;
+    }
+    .section6{
+        top:6500px;
+    }
+    .footer-form{
+        top:7500px;
     }
 }
-@media(max-width:389px){
-
+@media(max-width:422px){
+    .logo h1,
+    .section1-child h1,
+    .sec2-title h1,
+    .sec2-box h1,
+    .sec3-title h1,
+    .sec3-text-wrapper h3,
+    .sec4-title h1,
+    .sec4-text h1,
+    .sec5-title h1,
+    .sec6-title h1{
+        font: 500 21px Roboto;
+    }
+    .section1-child p,
+    .sec2-title p,
+    .sec2-box p,
+    .sec3-title p,
+    .sec3-text-wrapper p,
+    .sec4-title p,
+    .sec2-text p,
+    .sec5-title p,
+    .sec6-title p,
+    .footer-text p{
+        font: 14px/21px Roboto;
+    }
+    .explore-m,
+    .r-more,
+    .download-btn,
+    .sec3-btn{
+        font: 500 16px Roboto;
+    }
+    .sec2-box img{
+        width:150px;
+        height: auto;
+    }
+    .sec4-box{
+        height:120px;
+    }
+    .sec3-btn{
+        width:200px;
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form input{
+        height:60px;
+    }
+    .section3{
+        top:2900px;
+    }
+    .section4{
+        top:4200px;
+    }
+    .section5{
+        top:5200px;
+    }
+    .section6{
+        top:5600px;
+    }
+    .footer-form{
+        top:6600px;
+    }
+}
+@media(max-width:357px){
+    .section3{
+        top:3100px;
+    }
+    .section4{
+        top:4400px;
+    }
+    .section5{
+        top:5450px;
+    }
+    .section6{
+        top:5850px;
+    }
+    .footer-form{
+        top:6850px;
+    }
+}
+@media(max-width:313px){
+    .section3{
+        top:3250px;
+    }
+    .section4{
+        top:4600px;
+    }
+    .section5{
+        top:5650px;
+    }
+    .section6{
+        top:6050px;
+    }
+    .footer-form{
+        top:7050px;
+    }
 }

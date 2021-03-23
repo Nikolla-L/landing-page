@@ -507,12 +507,14 @@ li .contact-btn:hover a,
       margin-top:30px;
       margin-left:30px;
       width:50%;
+      cursor:context-menu;
   }
   .footer-form p{
      font:lighter 18px OpenSans;
      margin:30px auto;
      margin-left:30px;
      width:60%;
+     cursor:context-menu;
   }
   .footer-form form{
       width: 50%;
@@ -554,4 +556,5 @@ li .contact-btn:hover a,
     top:5500px;
     position:absolute;
     z-index:3;
+    color:rgba(240, 248, 255, 0);
 }

@@ -49,6 +49,9 @@
     .navigation-links{
         display:none;
     }
+    .side-bar{
+        display:block;
+    }
     .burger-bar{
         display:block;
         color:white;
@@ -333,11 +336,11 @@
     }
     .images img{
         width:20%;
-        height:fit-content
+        height:75%;
     }
     .images img:nth-child(2){
         width:35%;
-        height: fit-content;
+        height:100%;
     }
     .section2{
         top:1000px;

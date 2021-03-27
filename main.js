@@ -7,6 +7,20 @@ $(document).ready(()=>{
             $('header').removeClass('change-header');
         }
     })
+    $(window).scroll(()=>{
+        if($(window).scrollTop()>100){
+            $('header').addClass('headerColor1');
+        } else{
+            $('header').removeClass('headerColor1');
+        }
+    })
+    $(window).scroll(()=>{
+        if($(window).scrollTop()>700){
+            $('header').addClass('headerColor2');
+        } else{
+            $('header').removeClass('headerColor2');
+        }
+    })
 })
 
 //Fucking boxes text
@@ -61,3 +75,29 @@ arrowBtn.forEach((item) => item.addEventListener('click', ()=>{
         }
     })
 );
+
+//Fucking side bar
+
+let hd = document.querySelector('header');
+let burgerBtn = document.querySelector('.burger-bar').firstElementChild;
+let sideBar = document.querySelector('.side-bar');
+
+burgerBtn.addEventListener('click', ()=>{
+    if(!burgerBtn.classList.contains('fa-times')){
+        burgerBtn.classList.remove('fa-bars');
+        burgerBtn.classList.add('fa-times');
+        burgerBtn.style.color = "rgba(255, 62, 62, 0.699)";
+        sideBar.style.transform = "translate(0)";
+    }else{
+        burgerBtn.classList.remove('fa-times');
+        burgerBtn.classList.add('fa-bars');
+        burgerBtn.style.color = "white";
+        sideBar.style.transform = "translate(-100%)";
+    }
+});
+
+sideBar.firstElementChild.forEach((x)=>{
+    x.addEventListener('click', ()=>{
+        sideBar.style.transform = "translate(-100%)";
+    });
+})

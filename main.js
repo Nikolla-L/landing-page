@@ -75,7 +75,6 @@ arrowBtn.forEach((item) => item.addEventListener('click', ()=>{
         }
     })
 );
-
 //Fucking side bar
 
 let hd = document.querySelector('header');
@@ -96,8 +95,29 @@ burgerBtn.addEventListener('click', ()=>{
     }
 });
 
-sideBar.firstElementChild.forEach((x)=>{
-    x.addEventListener('click', ()=>{
-        sideBar.style.transform = "translate(-100%)";
-    });
+
+function closeSide(){
+    sideBar.style.transform = "translate(-100%)";
+    burgerBtn.classList.remove('fa-times');
+    burgerBtn.classList.add('fa-bars');
+    burgerBtn.style.color = "white";
+}
+
+sideBar.firstElementChild.childNodes.forEach((x)=>{
+    x.addEventListener('click', closeSide);
 })
+ document.querySelectorAll('section').forEach(x=>{
+    x.addEventListener('click', closeSide);
+ });
+ document.querySelector('.footer-form').addEventListener('click', closeSide);
+
+ //Fucking list underlining
+ $(document).ready(function () {
+    $('nav li a').click(function() {
+
+        $('nav li.active').removeClass('active');
+
+        var $parent = $(this).parent();
+        $parent.addClass('active');
+    });
+});

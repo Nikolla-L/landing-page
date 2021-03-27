@@ -398,6 +398,9 @@
         align-items: center;
         height:400px;
     }
+    .footer-form form{
+        margin-right:0;
+    }
     .footer-text{
         width:90%;
         text-align: center;

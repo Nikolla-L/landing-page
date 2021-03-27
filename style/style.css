@@ -11,7 +11,8 @@ section{
 .side-bar{
     position:fixed;
     z-index:6;
-    width:100%;
+    width:90%;
+    max-width:500px;
     background-color:rgba(255, 255, 0, 0.342);
     height:100vh;
     transform:translate(-100%);
@@ -34,6 +35,11 @@ section{
 }
 .side-bar ul li a{
     color:white;
+    width:100%;
+    text-align: center;
+}
+.side-bar ul li:nth-child(1) a{
+    border-bottom: none;
 }
 .side-bar ul li:nth-child(7) a{
     color:black;
@@ -135,8 +141,7 @@ li .contact-btn:hover a,
     color:black;
 }
 .active{
-    border-bottom:3px blue solid;
-    border-radius:1px;
+    text-decoration: underline white;
 }
 .section1{
     z-index:4;
